@@ -23,9 +23,11 @@ form.addEventListener('submit', (e)=>{
                 vowels.push(characters[i]);
             }
         }
-        message.push(`There are ${vowels.length} vowels in this text.`);
 
+        message.push(`There are ${vowels.length} vowels in this text.`);
         modelText.innerText = message.join(', ');
+
+        showModel();
     }
 
 
@@ -34,3 +36,15 @@ form.addEventListener('submit', (e)=>{
     }
 });
 
+function showModel(){
+    const modelContainer = document.querySelector('.model-container')
+    modelContainer.style.opacity = '100%';
+    modelContainer.style.pointerEvents = 'auto';
+}
+
+function closeModel(){
+    const modelContainer = document.querySelector('.model-container')
+    modelContainer.style.opacity = '0%';
+    modelContainer.style.pointerEvents = 'none';
+    document.querySelector('.text-input').value = '';
+}
