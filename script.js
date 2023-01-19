@@ -1,7 +1,14 @@
-const inputValue = document.querySelector(".text-input").value;
-const form = document.querySelector('.form');
+const form = document.querySelector('#form');
 
-form.addEventListener('submit', ()=>{
+console.log(form);
+
+form.addEventListener('submit', (e)=>{
+    e.preventDefault();
+    const inputValue = document.querySelector(".text-input").value;
     
+    console.log(inputValue);
+
+    if (!inputValue === '' || !inputValue === null) {
+    }
 });
 

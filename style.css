@@ -22,7 +22,7 @@ body {
 }
 
 .container {
-    padding: 5% 20%;
+    margin: 5% 20%;
     text-align: center;
 }
 
@@ -53,15 +53,26 @@ form h1 {
 }
 
 .model-container {
+    opacity: 0;
     background-color: rgba(0, 0, 0, 0.5);
     display: flex;
     justify-content: center;
     align-items: center;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    pointer-events: none;
 }
 
 .model {
-    background-color: white;
+    background-color: rgba(255, 255, 255, 1);
+    width: 25rem;
+    text-align: center;
+    padding: 1.5rem 2rem;
     border-radius: 6px;
-    box-shadow: var(--shadow);
-    width: 23rem;
+}
+
+.model * {
+    margin: .5rem 0;
 }
