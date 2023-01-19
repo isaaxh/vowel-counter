@@ -6,17 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vowel Counter</title>
     <link rel="stylesheet" href="./style.css" />
-    <script src="./script.js"></script>
+    <script src="./script.js" defer></script>
   </head>
   <body>
     <div class="container">
-      <form action="/" href="#" id="form">
+      <form action="/" href="#" class="form">
         <h1>Vowel Counter</h1>
         <input
           type="text"
           class="text-input"
           placeholder="Enter a text here..."
         />
+        <div class="error-element"></div>
         <div class="btn-container">
           <button type="submit">Check</button>
         </div>
@@ -25,7 +26,7 @@
     <div class="model-container">
       <div class="model">
         <h1>Vowel Count</h1>
-        <p>There are ---- number of vowels in this text</p>
+        <p class="model-text">There are ---- number of vowels in this text</p>
       </div>
     </div>
   </body>

@@ -39,6 +39,11 @@ form h1 {
     width: 100%;
 }
 
+.error-element {
+    color: var(--red-color);
+    margin: 0;
+}
+
 .btn-container button {
     width: 10rem;
     background-color: var(--accent-color);
@@ -53,7 +58,7 @@ form h1 {
 }
 
 .model-container {
-    opacity: 0;
+    /* opacity: 0; */
     background-color: rgba(0, 0, 0, 0.5);
     display: flex;
     justify-content: center;
@@ -61,7 +66,7 @@ form h1 {
     position: fixed;
     height: 100%;
     width: 100%;
-    top: 0;
+    /* top: 0; */
     pointer-events: none;
 }
 
